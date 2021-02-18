@@ -1,0 +1,19 @@
+:root { 
+    /* color */
+    --color-black : #130f40
+    --color-white : #dff9fb
+    --color-blue : #dff9fb
+    --color-yellow : #f9ca24
+    --color-pink : #ff7979
+    --color-light-grey : #95afc0
+
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-black);
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
