@@ -8,13 +8,15 @@
     --color-light-grey : #95afc0;
 
     /* size */
+    --base-space : 8px;
     --size-button : 60px;
-
+    --size-border : 4px;
+    --size-thumbnail : 50px;
+    --font-size: 18px;
+    
     /* annimation */
     --annimation-duration : 300ms
 
-    /* font */
-    --button-font-size : 18px;
 }
 
 body {
@@ -36,6 +38,7 @@ body {
     outline: none;
     cursor: pointer;
     transition: transform var(--annimation-duration) ease;
+    margin-right: var(--base-space);
 }
 
 .btn:hover,
@@ -54,7 +57,9 @@ body {
 }
 
 .colorBtn{
-    font-size: var(--button-font-size);    
+    font-size: var(--font-size);    
+    padding: calc(var(--base-space) * 2);
+    border-radius: var(--size-border );
 }
 
 .blue{
@@ -65,4 +70,31 @@ body {
 }
 .pink{
     background-color: var(--color-pink);
+}
+
+.items{
+    width: 60%;
+    height:60%;
+    list-style : none;
+    padding-left: 0;
+    /* items내에서 스크롤 되도록 설정  */
+    overflow-y: scroll;
+}
+
+.item{
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    padding: var(--base-space);
+    margin-bottom: var(--base-space);
+}
+
+.item__thumbnail{
+    width: var(--size-thumbnail);
+    height:var(--size-thumbnail);
+}
+
+.item__description {
+    margin-left :var(--base-space);
+    font-size: var(--font-size);
 }
