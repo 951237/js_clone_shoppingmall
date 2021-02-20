@@ -48,6 +48,11 @@ body {
     height : var(--size-button);
 }
 
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
 .colorBtn{
     font-size: var(--button-font-size);    
 }
