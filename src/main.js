@@ -5,7 +5,7 @@ function loadItems(){
         .then(json => json.items);
 }
 // Update the list with the given items
-function displayItems(item){
+function displayItems(items){
     const container = document.querySelector('.items');
     container.innerHTML = items.map(item => createHTMLString(item)).join('');
 }
@@ -25,6 +25,6 @@ function createHTMLString(item) {
 loadItems()
     .then(items => {
         displayItems(items);
-        setEventListeners(items);
+        // setEventListeners(items);
     })
     .catch(console.log);
