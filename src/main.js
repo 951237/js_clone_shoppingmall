@@ -20,8 +20,6 @@ function createHTMLString(item) {
     `;
 }
 
-
-
 // main -
 loadItems()
     .then(items => {
