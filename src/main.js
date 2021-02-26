@@ -21,7 +21,8 @@ function createHTMLString(item) {
 }
 
 
-// main
+
+// main -
 loadItems()
     .then(items => {
         displayItems(items);
